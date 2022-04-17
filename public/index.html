@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="vsocial-net-app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      var sSocNetStylesLink =
+        '/custom_web_template.html?object_code=vsocial_net_styles'
+      var sSocNetVariablesLink =
+        '/custom_web_template.html?object_code=vsocial_net_variables'
+
+      document.addEventListener('DOMContentLoaded', function() {
+        function addCssFile(resourceUrl) {
+          var link = document.createElement('link')
+          link.rel = 'stylesheet'
+          link.type = 'text/css'
+          link.href = resourceUrl
+          document.body.appendChild(link)
+        }
+
+        addCssFile(sSocNetVariablesLink)
+        addCssFile(sSocNetStylesLink)
+      })
+    </script>
+  </body>
+</html>

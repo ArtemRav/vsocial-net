@@ -1,0 +1,60 @@
+/* MAIN */
+.vsn-entry-base-fnt,
+.vsn-entry-header-fnt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 150%;
+  font-feature-settings: 'pnum' on, 'lnum' on, 'ss01' on;
+  color: var(--gray-100);
+  word-break: break-word;
+}
+.vsn-entry-light-gray-fnt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75em;
+  line-height: 150%;
+  font-feature-settings: 'pnum' on, 'lnum' on, 'ss01' on;
+  color: var(--gray-70);
+}
+.vsn-soc-btn--label {
+  height: 100%;
+  align-items: center;
+  margin-left: 0.063em;
+  font-size: 0.75em;
+}
+
+/* FONT SIZE */
+.vsn-fz-09 {
+  font-size: 0.9em;
+}
+
+/* FONT COLOR */
+.vsn-fc-gray-100 {
+  color: var(--gray-100);
+}
+.vsn-fc-blue-base {
+  color: var(--blue-base);
+}
+.vsn-fc-gray-70 {
+  font-family: var(--font_family);
+  font-size: 1em;
+  color: var(--gray-70);
+}
+
+@media screen and (max-width: 576px) {
+  .vsn-fc-gray-70 {
+    font-size: 0.788em;
+  }
+  .vsn-fs-placeholder {
+    color: var(--gray-50);
+    font-size: 0.788em;
+  }
+}
+/* FONT WEIGHT */
+.vsn-fw-600 {
+  font-weight: 600;
+}
+.vsn-fw-normal {
+  font-weight: normal;
+}
